@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kingswood Enterprise &amp; Impact Network</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIj48cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjIwIiBmaWxsPSIjMTMyOTRiIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOSw4KSBzY2FsZSgwLjg1KSI+PHBhdGggZD0iTTE0IDcwIEE0NiA0NiAwIDAgMSA1MiAxOC43IiBmaWxsPSJub25lIiBzdHJva2U9IiNlMDZhNGYiIHN0cm9rZS13aWR0aD0iNC41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTY4IDE4LjcgQTQ2IDQ2IDAgMCAxIDEwNiA3MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZTA2YTRmIiBzdHJva2Utd2lkdGg9IjQuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik02MCAzIEw1Ni40IDMwIEg2My42IFoiIGZpbGw9IiNmN2Y0ZWUiLz48cmVjdCB4PSI1NS41IiB5PSIyOCIgd2lkdGg9IjkiIGhlaWdodD0iMTQiIGZpbGw9IiNmN2Y0ZWUiLz4KPHBhdGggZD0iTTE2IDEwMCBWODAgTDMyIDcwIFYxMDAgWiIgZmlsbD0iI2Y3ZjRlZSIvPjxwYXRoIGQ9Ik0xMDQgMTAwIFY4MCBMODggNzAgVjEwMCBaIiBmaWxsPSIjZjdmNGVlIi8+CjxwYXRoIGQ9Ik0zMCAxMDAgVjYzIEw2MCAzNyBMOTAgNjMgVjEwMCBaIiBmaWxsPSIjZjdmNGVlIi8+CjxwYXRoIGQ9Ik0zMiA3MCBWMTAwIE04OCA3MCBWMTAwIiBzdHJva2U9IiMxMzI5NGIiIHN0cm9rZS13aWR0aD0iMS42Ii8+CjxjaXJjbGUgY3g9IjYwIiBjeT0iNTQiIHI9IjQuNiIgZmlsbD0iIzEzMjk0YiIvPjxyZWN0IHg9IjUyLjUiIHk9IjY1IiB3aWR0aD0iMTUiIGhlaWdodD0iMzEiIGZpbGw9IiMxMzI5NGIiLz4KPHJlY3QgeD0iNTciIHk9IjY1IiB3aWR0aD0iMS42IiBoZWlnaHQ9IjMxIiBmaWxsPSIjZjdmNGVlIi8+PHJlY3QgeD0iNjEuNCIgeT0iNjUiIHdpZHRoPSIxLjYiIGhlaWdodD0iMzEiIGZpbGw9IiNmN2Y0ZWUiLz4KPHJlY3QgeD0iNTIuNSIgeT0iNzkiIHdpZHRoPSIxNSIgaGVpZ2h0PSIxLjYiIGZpbGw9IiNmN2Y0ZWUiLz4KPHJlY3QgeD0iMzgiIHk9IjcwIiB3aWR0aD0iMS44IiBoZWlnaHQ9IjI2IiBmaWxsPSIjMTMyOTRiIi8+PHJlY3QgeD0iODAuMiIgeT0iNzAiIHdpZHRoPSIxLjgiIGhlaWdodD0iMjYiIGZpbGw9IiMxMzI5NGIiLz4KPHBhdGggZD0iTTYgMTA2IFE2MCA5NyAxMTQgMTA2IiBmaWxsPSJub25lIiBzdHJva2U9IiNmN2Y0ZWUiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="description" content="Kingswood Enterprise &amp; Impact Network. Building sustainable ventures. Creating meaningful impact. A Kingswood School of Business initiative.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout idea: a trades "job ticket" system. Heavy Franklin headlines, serif reading text, each brand a numbered ticket in its own colour. */
+  --ink:#13294b;
+  --paper:#f7f4ee;
+  --card:#ffffff;
+  --rule:#d9d4c8;
+  --muted:#5b6474;
+  --accent:#b5442c;
+  --display:"Libre Franklin", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* status bar */
+.status{background:var(--ink);color:#f6f4ef;font-family:var(--mono);font-size:13px;letter-spacing:.04em}
+.status .wrap{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding-top:9px;padding-bottom:9px}
+.pill{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:2px 10px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+
+/* header */
+header.top{border-bottom:1px solid var(--rule);background:var(--paper)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark .lock{display:flex;flex-direction:column;border-left:2px solid var(--ink);padding-left:12px;line-height:1}
+.mark .lock small{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:.32em;text-transform:uppercase}
+.mark .lock b{font-family:var(--display);font-weight:900;font-size:19px;letter-spacing:-.01em;text-transform:uppercase;margin:4px 0 3px}
+.mark .lock em{font-style:normal;font-family:var(--display);font-weight:800;font-size:11px;letter-spacing:.42em;text-transform:uppercase;color:var(--accent)}
+nav.links{display:flex;gap:22px;flex-wrap:wrap;font-family:var(--display);font-weight:600;font-size:15px}
+nav.links a{text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+nav.links a:hover{border-color:var(--accent)}
+
+/* hero */
+.hero{padding:72px 0 40px}
+.hero h1{font-weight:900;font-size:clamp(42px,7vw,84px);line-height:.96;letter-spacing:-.03em;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lede{max-width:60ch;font-size:21px;margin:28px 0 0;color:#2b3448}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:48px;border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.facts div{padding:18px 18px 18px 0}
+.facts div+div{padding-left:18px;border-left:1px solid var(--rule)}
+.facts strong{display:block;font-family:var(--display);font-weight:900;font-size:40px;line-height:1;font-variant-numeric:tabular-nums}
+.facts span{font-size:15px;color:var(--muted);display:block;margin-top:6px;line-height:1.35}
+
+/* pillars */
+.pillars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:48px;border-top:2px solid var(--ink)}
+.pillars div{padding:18px 18px 4px 0}
+.pillars div+div{padding-left:18px;border-left:1px solid var(--rule)}
+.pillars h3{font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:.1em}
+.pillars p{margin:8px 0 0;font-size:16px;color:#2b3448}
+/* pathways */
+.paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.path{background:var(--card);border:1px solid var(--rule);border-top:6px solid var(--ink);border-radius:6px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.path+.path{border-top-color:var(--accent)}
+.path h3{font-weight:900;font-size:32px;line-height:1;letter-spacing:-.02em}
+.path p{margin:0}
+.path ul{margin:0;padding-left:1.1em;display:grid;gap:6px;font-size:17px}
+.path .facts{margin-top:4px;grid-template-columns:repeat(3,minmax(0,1fr))}
+.path .facts strong{font-size:30px}
+.path .strip{margin-top:0}
+.go{margin-top:auto;font-family:var(--display);font-weight:800;font-size:16px;color:var(--accent);text-decoration:none}
+.go::after{content:" \2192"}
+.go:hover{text-decoration:underline}
+/* the strip of brand wordmarks */
+.strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.strip span{font-family:var(--display);font-weight:800;font-size:14px;color:#fff;padding:7px 12px;border-radius:4px;letter-spacing:.01em}
+
+section{padding:72px 0}
+section.alt{background:#efece4;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:40px;align-items:end;margin-bottom:40px}
+.sec-head h2{font-weight:900;font-size:clamp(32px,4.4vw,52px);line-height:1;letter-spacing:-.02em}
+.sec-head p{margin:0;max-width:60ch;color:#2b3448}
+
+/* roster */
+.group-label{display:flex;align-items:center;gap:14px;margin:36px 0 16px;font-family:var(--display);font-weight:800;font-size:15px;text-transform:uppercase;letter-spacing:.08em}
+.group-label::after{content:"";flex:1;height:1px;background:var(--rule)}
+.tickets{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.ticket{position:relative;background:var(--card);border:1px solid var(--rule);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.ticket .band{background:var(--c);color:#fff;padding:20px 22px 18px;display:flex;gap:16px;align-items:flex-start}
+.ticket .band svg{flex:none;width:48px;height:48px}
+.ticket .num{font-family:var(--mono);font-size:12px;letter-spacing:.1em;opacity:.85}
+.ticket h3{font-weight:900;font-size:26px;line-height:1.05;letter-spacing:-.01em;margin-top:2px}
+.ticket .tag{font-family:var(--body);font-style:italic;font-size:17px;margin-top:6px;opacity:.95}
+.ticket .body{padding:18px 22px 22px;display:flex;flex-direction:column;gap:14px;flex:1}
+.ticket .body p{margin:0;font-size:17px}
+.ticket dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:15px;border-top:1px dashed var(--rule);padding-top:14px}
+.ticket dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.ticket dd{margin:0}
+.ticket .foot{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;border:1px solid var(--rule);color:var(--muted)}
+.chip.c{border-color:var(--c);color:var(--c)}
+.ticket::before{content:"";position:absolute;right:16px;top:16px;width:12px;height:12px;border-radius:50%;background:var(--paper);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.step{padding:20px 18px 8px 0}
+.step+.step{padding-left:18px;border-left:1px solid var(--rule)}
+.step b{display:block;font-family:var(--display);font-weight:900;font-size:56px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.step h3{font-weight:800;font-size:19px;margin:12px 0 8px;line-height:1.2}
+.step p{margin:0;font-size:16px;color:#2b3448}
+
+/* pairs */
+.pairs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pair{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:22px}
+.pair .duo{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:var(--display);font-weight:800;font-size:17px}
+.pair .duo i{font-style:normal;color:var(--muted);font-weight:400}
+.pair .dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.pair p{margin:10px 0 0;font-size:16px;color:#2b3448}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px}
+.why h3{font-weight:800;font-size:21px;margin-bottom:6px}
+.why p{margin:0;color:#2b3448}
+
+/* audience */
+.who{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.who span{font-family:var(--display);font-weight:600;font-size:16px;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:8px 16px}
+
+/* ask */
+.ask{background:var(--ink);color:#f6f4ef;padding:64px 0}
+.ask h2{font-weight:900;font-size:clamp(30px,4vw,46px);line-height:1.02;letter-spacing:-.02em;max-width:18ch}
+.ask ol{margin:28px 0 0;padding-left:1.2em;max-width:62ch;display:grid;gap:10px}
+.ask .eyebrow{color:#aab3c4}
+.ask .note{margin-top:32px;font-size:15px;color:#c6ccd8;max-width:70ch}
+
+footer{padding:28px 0 40px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media (max-width:900px){
+  .sec-head{grid-template-columns:1fr;gap:14px}
+  .steps{grid-template-columns:1fr 1fr}
+  .step{padding-left:0 !important;border-left:0 !important;border-bottom:1px solid var(--rule);padding-bottom:18px}
+  .pairs{grid-template-columns:1fr}
+  .why{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr 1fr}
+  .pillars div:nth-child(3){padding-left:0;border-left:0}
+  .paths{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .wrap{padding:0 16px}
+  .steps{grid-template-columns:1fr}
+  .tickets{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr}
+  .pillars div{padding-left:0 !important;border-left:0 !important}
+  .path .facts{grid-template-columns:1fr 1fr 1fr}
+  .hero{padding-top:44px}
+  nav.links{gap:14px;font-size:14px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .ticket{transition:transform .18s ease, box-shadow .18s ease}
+  .ticket:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(20,33,58,.10)}
+}
+</style>
+</head>
+<body>
+
+<div class="status" role="note">
+  <div class="wrap">
+    <span>Concept preview for Kingswood staff. Nothing on this page is approved.</span>
+    <span class="pill">Status: Exploratory</span>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Kingswood Enterprise and Impact Network, top of page">
+      <svg viewBox="0 0 120 120" width="52" height="52" aria-hidden="true"><g>
+  <path d="M14 70 A46 46 0 0 1 52 18.7" fill="none" stroke="#b5442c" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M68 18.7 A46 46 0 0 1 106 70" fill="none" stroke="#b5442c" stroke-width="4.5" stroke-linecap="round"/>
+  
+  <path d="M60 3 L56.4 30 H63.6 Z" fill="#13294b"/>
+  <rect x="55.5" y="28" width="9" height="14" fill="#13294b"/>
+  <path d="M16 100 V80 L32 70 V100 Z" fill="#13294b"/>
+  <path d="M104 100 V80 L88 70 V100 Z" fill="#13294b"/>
+  <path d="M30 100 V63 L60 37 L90 63 V100 Z" fill="#13294b"/>
+  <path d="M16 100 V80 L32 70" fill="none" stroke="#f7f4ee" stroke-width="0"/>
+  <rect x="30.5" y="99" width="0" height="0"/>
+  <path d="M32 70 V100 M88 70 V100" stroke="#f7f4ee" stroke-width="1.6"/>
+  <circle cx="60" cy="54" r="4.6" fill="#f7f4ee"/>
+  <rect x="52.5" y="65" width="15" height="31" fill="#f7f4ee"/>
+  <rect x="57" y="65" width="1.6" height="31" fill="#13294b"/>
+  <rect x="61.4" y="65" width="1.6" height="31" fill="#13294b"/>
+  <rect x="52.5" y="79" width="15" height="1.6" fill="#13294b"/>
+  <rect x="38" y="70" width="1.8" height="26" fill="#f7f4ee"/>
+  <rect x="80.2" y="70" width="1.8" height="26" fill="#f7f4ee"/>
+  <path d="M6 106 Q60 97 114 106" fill="none" stroke="#13294b" stroke-width="4" stroke-linecap="round"/>
+</g></svg>
+      <span class="lock"><small>Kingswood</small><b>Enterprise &amp; Impact</b><em>Network</em></span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#pathways">Pathways</a>
+      <a href="#brands">The brands</a>
+      <a href="#how">How it works</a>
+      <a href="#why">Why Kingswood</a>
+      <a href="#ask">Your input</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">A Kingswood School of Business initiative</div>
+      <h1>Your calling needs a <em>sustainable foundation.</em></h1>
+      <p class="lede">Helping mission-driven leaders build businesses, develop entrepreneurial skills, and create lasting impact. The Kingswood Enterprise Community brings pastors, students, alumni, church members, and business owners together to learn, launch, and support one another.</p>
+      <div class="pillars">
+        <div><h3>Education</h3><p>Business foundations, entrepreneurship, financial literacy, and leadership.</p></div>
+        <div><h3>Business Launch</h3><p>Ready-made business concepts, training, and operational support.</p></div>
+        <div><h3>Social Innovation</h3><p>Developing ventures that address real community needs.</p></div>
+        <div><h3>Community</h3><p>Mentorship, relationships, collaboration, and ongoing support.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="pathways">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Two pathways. One community.</h2>
+        <p>Some people want to own a proven business. Others already have an idea for a business or a social venture. Both belong here, and both get the same education, mentors, and peer community.</p>
+      </div>
+      <div class="paths">
+        <article class="path">
+          <div class="eyebrow">Pathway 01</div>
+          <h3>Launch a Business</h3>
+          <p>Choose one of six proven business concepts. Get training on our Sussex campus, operating systems, mentorship, and support after launch.</p>
+          <div class="facts">
+            <div><strong>6</strong><span>ready-made concepts</span></div>
+            <div><strong>~2 wks</strong><span>hands-on campus training</span></div>
+            <div><strong>1</strong><span>shared system after launch</span></div>
+          </div>
+          <div class="strip" aria-label="Brands in Pathway 01">
+            <span style="background:#1f5f6b">Plumb Line Painting Co.</span>
+            <span style="background:#6b6259">Second Stone Kitchen &amp; Bath</span>
+            <span style="background:#a4482f">Brick &amp; Hue</span>
+            <span style="background:#1a2845">All-In Sports</span>
+            <span style="background:#2c3e50">KoolMinds</span>
+            <span style="background:#46704f">Alongside Senior Companions</span>
+          </div>
+          <a class="go" href="#brands">See the six brands</a>
+        </article>
+        <article class="path">
+          <div class="eyebrow">Pathway 02</div>
+          <h3>Build an Impact Venture</h3>
+          <p>Bring your own business or social innovation idea. Get entrepreneurial education, guidance, and mentorship to turn it into a sustainable venture.</p>
+          <ul>
+            <li>Test the idea with real customers before spending money</li>
+            <li>Build a business model, budget, and launch plan</li>
+            <li>Work with mentors from business, ministry, and the community</li>
+            <li>Present to peers and partners at the end of the program</li>
+          </ul>
+          <a class="go" href="#ask">Tell us what you would want</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<section class="alt" id="brands">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Pathway 01: the six brands</h2>
+        <p>Every concept had to pass the same tests: one person can run it, a capable beginner can learn it in about two weeks, it starts without a bank loan, the customer sees real value, and it fits around pastoral and family life. Most can run from home, a vehicle, or a church building.</p>
+      </div>
+
+      <div class="group-label">Home services</div>
+      <div class="tickets">
+        <article class="ticket" style="--c:#1f5f6b">
+          <div class="band">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4 V24" stroke="#fff" stroke-width="2.5"/><path d="M16 24 H32 L24 42 Z" fill="#fff"/></svg>
+            <div><div class="num">No. 01</div><h3>Plumb Line Painting Co.</h3><div class="tag">Straight lines. Honest work.</div></div>
+          </div>
+          <div class="body">
+            <p>Interior repainting for homes, rentals, churches, and campuses. Always in demand, quick to learn well, and cheap to equip.</p>
+            <dl>
+              <dt>Customers</dt><dd>Homeowners, landlords, institutions</dd>
+              <dt>Runs from</dt><dd>Home and a vehicle</dd>
+              <dt>Training</dt><dd>Two weeks on campus, painting real Kingswood dorm rooms</dd>
+            </dl>
+            <div class="foot"><span class="chip c">Anchor concept</span><span class="chip">Year-round</span></div>
+          </div>
+        </article>
+
+        <article class="ticket" style="--c:#6b6259">
+          <div class="band">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="14" width="38" height="20" rx="3" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M11 30 C18 22 24 28 30 19 S38 22 40 18" fill="none" stroke="#fff" stroke-width="1.6" opacity=".8"/></svg>
+            <div><div class="num">No. 02</div><h3>Second Stone Kitchen &amp; Bath</h3><div class="tag">New counters, tubs and tile without the tear-out.</div></div>
+          </div>
+          <div class="body">
+            <p>Resurfacing over existing countertops, tubs, and tile with one standard product system. A transformed kitchen or bathroom for a fraction of replacement cost.</p>
+            <dl>
+              <dt>Customers</dt><dd>Homeowners, landlords, house flippers</dd>
+              <dt>Runs from</dt><dd>Home and a vehicle</dd>
+              <dt>Training</dt><dd>Two weeks on campus, then mentored first jobs</dd>
+            </dl>
+            <div class="foot"><span class="chip c">Higher ticket</span><span class="chip">Year-round</span></div>
+          </div>
+        </article>
+
+        <article class="ticket" style="--c:#a4482f">
+          <div class="band">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="10" width="18" height="8"/><rect x="26" y="10" width="18" height="8"/><rect x="4" y="22" width="8" height="8"/><rect x="16" y="22" width="18" height="8"/><rect x="38" y="22" width="6" height="8"/><rect x="4" y="34" width="18" height="8"/><rect x="26" y="34" width="18" height="8"/></g><rect x="16" y="22" width="18" height="8" fill="#fff" opacity=".55"/></svg>
+            <div><div class="num">No. 03</div><h3>Brick &amp; Hue</h3><div class="tag">Colour that soaks in, not peels off.</div></div>
+          </div>
+          <div class="body">
+            <p>Colour-matched masonry stain that refreshes dated brick without the look or upkeep of paint. Every job starts with an in-home colour consultation.</p>
+            <dl>
+              <dt>Customers</dt><dd>Homeowners with dated brick</dd>
+              <dt>Runs from</dt><dd>Home and a vehicle</dd>
+              <dt>Training</dt><dd>Two weeks on campus, colour matching and application</dd>
+            </dl>
+            <div class="foot"><span class="chip c">Spring to fall</span><span class="chip">Pairs with painting</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="group-label">Kids</div>
+      <div class="tickets">
+        <article class="ticket" style="--c:#1a2845">
+          <div class="band" style="box-shadow:inset 0 -5px 0 #e85d1f">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M7 24 H41 M24 7 C16 15 16 33 24 41 M24 7 C32 15 32 33 24 41" fill="none" stroke="#e85d1f" stroke-width="2"/></svg>
+            <div><div class="num">No. 04</div><h3>All-In Sports</h3><div class="tag">Every kid plays. Every season.</div></div>
+          </div>
+          <div class="body">
+            <p>Seasonal multi-sport programs on a membership model, run in church gyms, school gyms, and community fields that already exist. An adaptive track for neurodivergent kids is being designed.</p>
+            <dl>
+              <dt>Customers</dt><dd>Parents of kids 4 to 14</dd>
+              <dt>Runs from</dt><dd>Church gym or rented community space</dd>
+              <dt>Training</dt><dd>Campus training plus an expert-designed coaching method</dd>
+            </dl>
+            <div class="foot"><span class="chip c">From BeAKid Brands</span><span class="chip">Church-building fit</span></div>
+          </div>
+        </article>
+
+        <article class="ticket" style="--c:#2c3e50">
+          <div class="band" style="box-shadow:inset 0 -5px 0 #e8c879">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40 C12 40 7 31 9 22 C11 12 19 7 26 8 C35 9 41 17 39 26 C37 33 31 36 26 33" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><circle cx="25" cy="22" r="4" fill="#e8c879"/></svg>
+            <div><div class="num">No. 05</div><h3>KoolMinds</h3><div class="tag">Every mind learns differently.</div></div>
+          </div>
+          <div class="body">
+            <p>Structured tutoring and skill-building for kids 6 to 18 with ADHD, dyslexia, and other learning differences. Delivered at home or in a church classroom. Tutoring, not therapy.</p>
+            <dl>
+              <dt>Customers</dt><dd>Parents already paying for extra help</dd>
+              <dt>Runs from</dt><dd>Home or a church room</dd>
+              <dt>Training</dt><dd>Evidence-based curriculum; partner in discussion</dd>
+            </dl>
+            <div class="foot"><span class="chip c">From BeAKid Brands</span><span class="chip">Strong demand</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="group-label">Seniors</div>
+      <div class="tickets">
+        <article class="ticket" style="--c:#46704f">
+          <div class="band">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="12" r="5" fill="#fff"/><circle cx="32" cy="14" r="5" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M10 42 L14 24 H21 L24 42 M27 42 L29 26 H36 L39 42" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 28 H29" stroke="#fff" stroke-width="2.5"/></svg>
+            <div><div class="num">No. 06</div><h3>Alongside Senior Companions</h3><div class="tag">Errands, rides, and good company.</div></div>
+          </div>
+          <div class="body">
+            <p>Non-medical help for older adults: rides to appointments, groceries and errands, small household tasks, and regular visits. Churches can add a weekday social club in their own building.</p>
+            <dl>
+              <dt>Customers</dt><dd>Seniors and their adult children</dd>
+              <dt>Runs from</dt><dd>Home and a vehicle; church for the day club</dd>
+              <dt>Training</dt><dd>Two weeks on campus, service standards and safety</dd>
+            </dl>
+            <div class="foot"><span class="chip c">Natural pastoral fit</span><span class="chip">Year-round</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>How Pathway 01 works</h2>
+        <p>The course teaches the business. The brand does the heavy lifting. Nobody starts from a blank page on services, pricing, or marketing.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><b>1</b><h3>Take the course</h3><p>Business foundations: self-assessment, customers, finances, marketing, and launch.</p></div>
+        <div class="step"><b>2</b><h3>Choose a brand</h3><p>Pick the concept that fits your gifts, your town, and your schedule.</p></div>
+        <div class="step"><b>3</b><h3>Train in Sussex</h3><p>About two weeks of hands-on training on campus, on real jobs where possible.</p></div>
+        <div class="step"><b>4</b><h3>Launch at home</h3><p>Open under a recognizable brand, from home, a vehicle, or your church.</p></div>
+        <div class="step"><b>5</b><h3>Stay supported</h3><p>A small monthly fee covers booking, marketing, coaching, and a peer network.</p></div>
+      </div>
+      <div style="margin-top:40px">
+        <div class="eyebrow">The Kingswood Enterprise Community</div>
+        <div class="who">
+          <span>Pastors and church planters</span>
+          <span>Ministry students and graduates</span>
+          <span>Kingswood alumni</span>
+          <span>Church members</span>
+          <span>Social entrepreneurs</span>
+          <span>Business owners who want to mentor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="pairs">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Start with one. Add a second.</h2>
+        <p>The brands are designed to complement each other, so an operator can grow by adding a partner brand instead of starting over.</p>
+      </div>
+      <div class="pairs">
+        <div class="pair">
+          <div class="duo"><span><span class="dot" style="background:#1f5f6b"></span>Plumb Line</span><i>+</i><span><span class="dot" style="background:#a4482f"></span>Brick &amp; Hue</span></div>
+          <p>Interiors in winter, brick in summer. Work all year in an Atlantic climate.</p>
+        </div>
+        <div class="pair">
+          <div class="duo"><span><span class="dot" style="background:#1f5f6b"></span>Plumb Line</span><i>+</i><span><span class="dot" style="background:#6b6259"></span>Second Stone</span></div>
+          <p>Same customer, same house, a bigger job. Paint the kitchen, then resurface the counters.</p>
+        </div>
+        <div class="pair">
+          <div class="duo"><span><span class="dot" style="background:#46704f"></span>Alongside</span><i>+</i><span>Church day club</span></div>
+          <p>Visits and errands during the week, plus a social day hosted in the church building.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Why Kingswood</h2>
+        <p>This builds on work we already do and spaces we already have.</p>
+      </div>
+      <div class="why">
+        <div><h3>We already form mission-driven leaders</h3><p>This gives the people we send out a practical path to financial sustainability, so they never have to choose between calling and income.</p></div>
+        <div><h3>We already teach business</h3><p>The education builds on the Marketplace Ministry Accelerator design and the Business and Management department.</p></div>
+        <div><h3>Our campus becomes the training ground</h3><p>Hundreds of dorm rooms need renovation. Trainees paint real rooms, and the university gets the work done.</p></div>
+        <div><h3>Our buildings work year-round</h3><p>Two-week training cohorts use residences and classrooms outside the academic calendar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ask" id="ask">
+    <div class="wrap">
+      <div class="eyebrow">What we would like from you</div>
+      <h2>Help us decide which of these is worth building first.</h2>
+      <ol>
+        <li>Which brands would pastors and churches in your network actually use?</li>
+        <li>Who should we talk to: pastors, district leaders, church boards, or alumni?</li>
+        <li>What would stop a church from hosting one of these in its building?</li>
+        <li>What is missing from the roster?</li>
+        <li>Should the public brand feel explicitly Christian, or like a broader entrepreneurial community grounded in Christian values?</li>
+      </ol>
+      <p class="note">Brand names are subject to name and trademark searches. All-In Sports and KoolMinds are adapted from the BeAKid Brands portfolio, with terms to be agreed. Fees, pricing, credential status, and regulatory requirements are not yet set.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Kingswood Enterprise &amp; Impact Network. Building sustainable ventures. Creating meaningful impact.</span>
+    <span>Draft for internal discussion, November 2026</span>
+  </div>
+</footer>
+</body>
+</html>
